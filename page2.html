@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+  <div id="title-description">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take the time to fill out this short survey.</p>      
+  </div>
+  <div id="form-box">
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <label id="email-label" for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="Enter a valid e-mail" required>
+    <label id="number-label" for="number">Number</label>
+    <input type="number" id="number" name="number" min="1" max="9" placeholder="Enter a number">
+    <label id="dropdown-label" for="dropdown">Which option describes you best currently?</label>
+    <select id="dropdown" name="options"><option value="default" disabled selected>Select option</option>
+      <option value="bored">Bored</option>
+      <option value="tired">Tired</option>
+    </select>
+    <div id="radio-buttons">
+      <p id="radio-button-question">Would you fill out this survey again?</p>
+      <label for="no">No</label>
+      <input type="radio" id="no" name="fillagain" value="no"><label for="yes">Yes</label>
+      <input type="radio" id="yes" name="fillagain" value="yes">
+    <label for="maybe">Maybe</label>
+      <input type="radio" id="maybe" name="fillagain" value="maybe">
+    </div>
+    <div id="checkboxes">
+      <p id="checkbox-items">Which of these do you like?</p>
+      <label for="cats">Cats</label>
+      <input type="checkbox" id="cats" value="cats"><label for="birds">Birds</label>
+      <input type="checkbox" id="birds" value="birds"><label for="dogs">Dogs</label>
+      <input type="checkbox" id="dogs" value="dogs">
+      
+    </div>
+    <label id="textarea-label" for="textarea">Questions or Comments?</label><textarea id="textarea" name="comments" placeholder="Enter comments here"></textarea>
+    <button id="submit" form="survey-form">Submit</button>
+  </form>    
+  </div>
+</body>
