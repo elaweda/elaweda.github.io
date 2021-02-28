@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+    <div id="title-description">
+        <h1 id="title"><span class="word-1">survey</span><span class="word-2">form</span></h1>
+        <p id="description">Please take the time to fill out this short survey.</p>
+    </div>
+    <div id="form-box" class="formBox">
+        <form id="survey-form">
+            <div id="text-inputs" class="formGroup">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid e-mail" required>
+                <label id="number-label" for="number">Number</label>
+                <input type="number" id="number" name="number" min="1" max="9" placeholder="Enter a number">
+                <br>
+                <br>
+                <label id="dropdown-label" for="dropdown">Which option currently describes you most accurately?</label>
+                <select id="dropdown" name="options">
+                    <option value="default" disabled selected>Select option</option>
+                    <option value="bored">Happy</option>
+                    <option value="tired">Excited</option>
+                </select>
+            </div>
+
+            <div id="checkboxes" class="formGroup">
+                <p id="checkbox-items">Which of these do you like?</p>
+                <label for="cats">Cats</label>
+                <input type="checkbox" id="cats" value="cats"><label for="birds">Birds</label>
+                <input type="checkbox" id="birds" value="birds"><label for="dogs">Dogs</label>
+                <input type="checkbox" id="dogs" value="dogs">
+
+            </div>
+            <div id="radio-buttons" class="formGroup">
+                <p id="radio-button-question">Would you fill out this survey again?</p>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="fillagain" value="no"><label for="yes">Yes</label>
+                <input type="radio" id="yes" name="fillagain" value="yes">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="fillagain" value="maybe">
+            </div>
+            <div id="comment-box" class="formGroup">
+                <label id="textarea-label" for="textarea">Questions or Comments?</label>
+                <textarea id="textarea" name="comments" placeholder="Enter comments here"></textarea>
+            </div>
+            <button id="submit" form="survey-form">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
