@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#subtitle {
+    padding: 25px 0;
+}
 main {
     font-family: Helvetica;
     background:#ffffff;
@@ -9,12 +17,59 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-width: 75%;
-    height: auto
+    height: auto;
+    padding: 25px 0;
     }
 #tribute-info-list {
     margin: 0 40% 50px 40%;
     text-align: left;
     }
 #img-caption {
-    margin-top: 25px;
+    padding: 25px 0;
     }
+#tribute-info-list {
+    padding: 25px 0;
+}
+.dropdown-content {
+    display: none;
+    top: 100%;
+    position: absolute;
+    background-color: #4b4b4b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content-link {
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 16px 16px;
+    color: #f2f2f2;
+    font-family: Helvetica;
+}
+.dropdown-content-link:hover {
+    background-color: #4a90e6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #4b4b4b;
+    overflow: visible;
+}
+.nav-link {
+    font-family: Helvetica;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-link:hover {
+    background-color: #585858;
+}

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
     background-color: yellow;
@@ -17,9 +23,6 @@ h1 {
 .word-2 {
     color: #BC1919;
     font-family: Avenir;
-}
-li {
-    list-style-type: none;
 }
 .nav {
     position: fixed;
